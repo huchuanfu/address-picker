@@ -1,6 +1,6 @@
 # address-picker
-    A jQuery plugin for picking districts of China,css and js files are only `8KB`,just try it.
     一个jquery地址选择器，简单得很，试一哈嘛。
+    A jQuery plugin for picking districts of China,css and js files are only `8KB`,just try it.
 ## Files
     dist/
     ├── js
@@ -9,9 +9,9 @@
         ├── address-picker-blue.css   (compressed)
         ├── address-picker-green.css   (compressed)
     └── data
-        ├── pc-code.json
-        ├── pca-code.json
-        └── pcas-code.json
+        ├── pc-code.json   (省市两级json数据)
+        ├── pca-code.json  (省市区三级json数据，默认使用这个)
+        └── pcas-code.json (省市区乡镇四级json数据)
 ## Include files:
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
     <script src="<%=basePath%>address-picker/js/address-picker.js" type="text/javascript"></script>
@@ -44,6 +44,7 @@
         console.log(addressPicker1.getCurrentObject());    //获取当前点击节点数据:{code: 1101, text: "市辖区", level: 2}
         console.log(addressPicker1.getTotalValueAsText()); //获取所有选择节点文本:北京市 / 市辖区
         console.log(addressPicker1.getTotalValueAsArray());//获取所有选择节点编码:{code:['11','1101'],text:['北京市','市辖区']}
+        $('#address_picker_text').text(addressPicker1.getTotalValueAsText());
 	});
     addressPicker1.show();  //显示面板
     addressPicker1.hide();  //隐藏面板
