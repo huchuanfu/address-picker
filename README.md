@@ -15,6 +15,12 @@
 ## Include files:
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
     <script src="<%=basePath%>address-picker/js/address-picker.js" type="text/javascript"></script>
+## Any html element like
+    <body>
+      <div>
+        <span id="address_picker_text">选择地址</span>
+      </div>
+    </body>
 ## Usage
 ### quick start
     var addressPicker1 = new addressPicker("address_picker_text");
@@ -34,7 +40,7 @@
         data:""                                       //可不传,默认使用`data`文件夹下的三级数据json文件
     });                                               //支持传入json文件路径(数据类型为string)或是数据本身(数据类型为object)
 ### method
-    addressPicker1.on("click", function () {
+    addressPicker1.on("click", function () {               //绑定地址选择面板事件
         console.log(addressPicker1.getCurrentObject());    //获取当前点击节点数据:{code: 1101, text: "市辖区", level: 2}
         console.log(addressPicker1.getTotalValueAsText()); //获取所有选择节点文本:北京市 / 市辖区
         console.log(addressPicker1.getTotalValueAsArray());//获取所有选择节点编码:{code:['11','1101'],text:['北京市','市辖区']}
@@ -44,4 +50,7 @@
 ## config API
     if I have time to write.
 ## example
-    ![image](https://github.com/huchuanfu/address-picker/blob/master/example/blue.png)
+blue theme:<br>
+![image](https://github.com/huchuanfu/address-picker/blob/master/example/blue.png)
+<br>green theme:<br>
+![image](https://github.com/huchuanfu/address-picker/blob/master/example/green.png)
