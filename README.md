@@ -1,7 +1,7 @@
 # address-picker
     一个jquery地址选择器，很简单。
     A jQuery plugin for picking districts of China,css and js files are only `8KB`,just try it.
-## Files
+## 文件结构Files
     dist/
     ├── js
         ├── address-picker.js   (compressed)
@@ -18,7 +18,7 @@
 ### 在html中引入js文件(如果项目有jquery就不需要引第一个js)
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
     <script src="<%=basePath%>address-picker/js/address-picker.js" type="text/javascript"></script>
-## 想让弹出地址面板展示在哪个页面元素下，就传入该元素的id，可以是任意元素(比如div/span/button...之类的)
+### 想让弹出地址面板展示在哪个页面元素下，就传入该元素的id，可以是任意元素(比如div/span/button...之类的)
     下方以一个span举例:
     <span id="address_picker_text">选择地址</span>
 ## Usage
@@ -56,4 +56,4 @@ blue theme:<br>
 ![image](https://github.com/huchuanfu/address-picker/blob/master/example/blue-gif.gif)
 <br>green theme:<br>
 ![image](https://github.com/huchuanfu/address-picker/blob/master/example/green-gif.gif)
-## star it if helpful,thanks
+### star it if helpful,thanks
