@@ -51,8 +51,9 @@
     addressPicker1.hide();  //隐藏面板
 ## config API
     if I have time to write.
-## example
+## example(动图加载可能有点慢)
 blue theme:<br>
-![image](https://github.com/huchuanfu/address-picker/blob/master/example/blue.png)
+![image](https://github.com/huchuanfu/address-picker/blob/master/example/blue-gif.gif)
 <br>green theme:<br>
-![image](https://github.com/huchuanfu/address-picker/blob/master/example/green.png)
+![image](https://github.com/huchuanfu/address-picker/blob/master/example/green-gif.gif)
+## star it if helpful,thanks
