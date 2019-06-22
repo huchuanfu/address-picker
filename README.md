@@ -93,13 +93,13 @@ $("#address_picker_text").text("选择地区");
 * 字符串，自己项目的json文件路径，格式要求参考data文件夹下的json文件
 * object，要有name、code、children三个节点，形如[{name:'',code:'',children:[{name:'',code:''}]}]
 
-### asyncUrl返回数据格式
+### `asyncUrl`返回数据格式
 * 当isAsync为true且asyncUrl不为空时，切换为异步模式
 * 初始化(new addressPicker)的时候会发起第一层数据的请求，以后点击每层里面的数据会发起下一层的请求
 * 请求数据格式示例{"code":"11", "name":"北京市", "level":1},第一次请求的时候code和name为空
 * 返回下一层数据的格式示例{code:"1101",name:"市辖区"}
 
-### 按钮组'btnConfig'数据格式
+### 按钮组`btnConfig`数据格式
 * 可不传，默认无按钮
 * 传参格式[{text:'按钮名称',click:按钮点击事件function}]，最多传3个按钮
 ```javascript
